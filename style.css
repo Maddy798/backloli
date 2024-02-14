@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.container img {
+  width: 20vw;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.yes-btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: rgb(0, 255, 0);
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.3s;
+  z-index: 100;
+}
+
+.yes-btn:hover {
+  transform: scale(1.1);
+}
+
+.no-btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background: rgb(255, 0, 0);
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all ease 0.3s;
+  z-index: 100;
+}
+
+.no-btn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+  .container img {
+    width: 40vw;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .yes-btn {
+    width: 150px;
+    height: 40px;
+  }
+  .no-btn {
+    width: 150px;
+    height: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .container img {
+    width: 50vw;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
+  .yes-btn {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+  .no-btn {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
